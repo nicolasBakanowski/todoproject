@@ -4,7 +4,7 @@ from models.todomodel import Todo
 import motor.motor_asyncio
 
 
-conn_str = 'mongodb+srv://nbaka:nbaka145236@cluster0.aw8wi.mongodb.net/TodoList?retryWrites=true&w=majority'
+conn_str = 'mongodb+srv://<user>:<pass>@cluster0.aw8wi.mongodb.net/<collection>?retryWrites=true&w=majority'
 client = motor.motor_asyncio.AsyncIOMotorClient(conn_str)
 database = client.TodoList
 collection = database.todo
